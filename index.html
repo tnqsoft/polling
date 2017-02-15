@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>PHP Chat Polling</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css" media="all">
+</head>
+
+<body>
+
+    <div class="chat-box center-block">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-md-7">
+                        <h4>Chat Box Polling Example</h4>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon1">
+                                <span class="glyphicon glyphicon-user"></span>
+                            </span>
+                            <input type="text" class="form-control" placeholder="Username..." aria-describedby="basic-addon1" id="txtUsername" value="anonymous">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-body">
+                <div class="chat-content" data-last="0">
+                    <!-- <div class="chat-item">
+                        <p class="display-username text-primary"><span class="glyphicon glyphicon-user"></span>: User 1</p>
+                        <p class="display-message">asdfasdhk fjh fkashd fkahfa klsdfh aldfhadkslfhasdkflhasdkfl hasdfk lhasdkl</p>
+                    </div> -->
+                </div>
+            </div>
+            <div class="panel-footer">
+                <div class="row" id="messageBox">
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" id="txtMessage" placeholder="Nội dung...">
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn btn-primary btn-block" id="btnSend">
+                            Gửi
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <p class="text-center">&copy; 2017 tnqsoft.com</p>
+    </div>
+
+    <script src='js/jquery-3.1.1.min.js'></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src='js/script.js'></script>
+</body>
+
+</html>
