@@ -1,4 +1,4 @@
-var apiUrl = 'chat.php';
+var apiUrl = 'polling-chat.php';
 
 function disableStage(active) {
     $('#txtUsername').prop('disabled', active);
