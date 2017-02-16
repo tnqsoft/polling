@@ -44,3 +44,7 @@ body {
 #txtMessage {
   resize: vertical;
 }
+
+.icon-status {
+  font-size: 30px;
+}
