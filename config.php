@@ -8,6 +8,7 @@ define("DB_PORT", 3306);
 
 // set php runtime to unlimited
 set_time_limit(0);
+clearstatcache();
 
 function __autoload($class)
 {

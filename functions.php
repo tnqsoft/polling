@@ -3,14 +3,16 @@
 function getList($mysqli, $last=0)
 {
     $sql = "SELECT * FROM `chatbox`";
-    if($last !=0) {
+    if($last != 0) {
         $sql .= " WHERE `created_at` > '$last'";
     }
     $sql .= " ORDER BY `created_at` ASC LIMIT 20";
     $list = array();
     while(true) {
         try {
-            if($result = $mysqli->query($sql)) {
+            $result = $mysqli->query($sql);
+            if($result->num_rows > 0) {
+
                 while ($obj = $result->fetch_object()) {
                     $list[] = array(
                         'id' => $obj->id,
