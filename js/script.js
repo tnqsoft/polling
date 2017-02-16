@@ -8,6 +8,7 @@ function disableStage(active) {
 
 function clearStage() {
     $('#txtMessage').val('');
+    $('#txtMessage').focus();
 }
 
 function addMessage() {
@@ -26,9 +27,9 @@ function addMessage() {
             disableStage(true);
         },
         success: function(message) {
-            clearStage();
             disableStage(false);
             displayMessage(message);
+            clearStage();
         },
         error: function() {
             disableStage(false);
@@ -80,6 +81,8 @@ function pollingMessage() {
 }
 
 //---------------------------------------------------------
+
+$('#txtMessage').textareaAutoSize();
 
 $('#txtMessage').keyup(function(e) {
     if (e.keyCode === 13) {

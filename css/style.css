@@ -40,3 +40,7 @@ body {
 .chat-item.item-to p.display-message {
   background-color: #ceedc4;
 }
+
+#txtMessage {
+  resize: vertical;
+}
